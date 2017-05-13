@@ -1,6 +1,10 @@
 .Hello_left {
 	float:left;
+<<<<<<< HEAD
 	margin-left: 500px;
+=======
+	margin-left: 300px;
+>>>>>>> test change
 
 }
 .list_right{
