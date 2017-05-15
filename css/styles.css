@@ -78,19 +78,23 @@ h1 {
   margin-top: 10px;
 }
 
+.contacts__header {
+  font-size: 225%;
+}
 
 .footer--style {
   background-color: #ddf5ff;
-  width: 100%;
-  
+  height: auto;
 }
 
-.container__footer--style {
-  padding: 0;  
+.social-buttons {
+  margin: 2% 0;
+  padding-left: 0;
 }
 
-.contacts__header {
-  font-size: 225%;
+.social-buttons > li {
+  display: inline-block;
+  margin-right: 15px;
 }
 
 /*Responsive text on all page (depending on different screen width) */
