@@ -1,20 +1,4 @@
-/*Responsive text on all page (depending on different screen width) */
 
-@media all and (max-width: 1200px) { /* screen size until 1200px */
-  body {
-    font-size: 1.5em; /* 1.5x default size */
-  }
-}
-@media all and (max-width: 1000px) { /* screen size until 1000px */
-  body {
-    font-size: 1.2em; /* 1.2x default size */
-  }
-}
-@media all and (max-width: 500px) { /* screen size until 500px */
-  body {
-    font-size: 0.8em; /* 0.8x default size */
-  }
-}
 
 .footer {
   width: 100%;
@@ -70,18 +54,18 @@ h1 {
 }
 
 .container--info h1 {
-  font-size: 50px;
+  font-size: 350%;
   color: black;
   text-align: center;
   padding: 35px 0;
 }
 
 .container--info p {
-  font-size: 25px;
+  font-size: 185%;
 }
 
 .table--info {
-  font-size: 20px;
+  font-size: 150%;
 }
 
 .section_3 {
@@ -103,4 +87,32 @@ h1 {
 
 .container__footer--style {
   padding: 0;  
+}
+
+.contacts__header {
+  font-size: 225%;
+}
+
+/*Responsive text on all page (depending on different screen width) */
+
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+  body {
+    font-size: 1.5em; /* 1.5x default size */
+  }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+  body {
+    font-size: 1.2em; /* 1.2x default size */
+  }
+}
+@media all and (max-width: 500px) { /* screen size until 500px */
+  body {
+    font-size: 0.8em; /* 0.8x default size */
+  }
+}
+
+@media all and (max-width: 396px) {  
+  body {
+    font-size: 0.5em; /*1rem = 16px*/
+  }
 }
