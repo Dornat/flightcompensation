@@ -38,6 +38,9 @@ h1 {
 
 .how-section__image {
   margin-bottom: 30px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
 }
 
 .how-section__info {
@@ -120,13 +123,18 @@ h1 {
 }
 
 .social-buttons {
-  margin: 2% 0;
   padding-left: 0;
+  margin-top: 25px;
 }
 
 .social-buttons > li {
   display: inline-block;
   margin-right: 15px;
+}
+
+.credits {
+  float: right;
+  margin-top: 15px;
 }
 
 /*Responsive text on all page (depending on different screen width) */
@@ -136,11 +144,13 @@ h1 {
     font-size: 1.5em; /* 1.5x default size */
   }
 }
+
 @media all and (max-width: 1000px) { /* screen size until 1000px */
   body {
     font-size: 1.2em; /* 1.2x default size */
   }
 }
+
 @media all and (max-width: 500px) { /* screen size until 500px */
   body {
     font-size: 0.8em; /* 0.8x default size */
