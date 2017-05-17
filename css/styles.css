@@ -3,8 +3,17 @@ body {
   
 }
 
+/*Navbar styles*/
+
 .navbar--style {
   background-color: #edfaff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  text-shadow: 0.5px 0.5px 0.25px #48686f;
+  background-color: #edfaff; !important
 }
 
 .navbar-options {
