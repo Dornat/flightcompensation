@@ -12,7 +12,7 @@ body {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-  text-shadow: 0.5px 0.5px 0.25px #48686f;
+  text-shadow: 0.25px 0.25px 0.25px #48686f;  
   background-color: #edfaff; !important
 }
 
@@ -143,7 +143,7 @@ h1 {
 
 .credits {
   float: right;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 /*Responsive text on all page (depending on different screen width) */
