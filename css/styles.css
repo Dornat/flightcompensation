@@ -1,9 +1,41 @@
 body {
   margin-top: 50px;
-  
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Spinnaker;
+  src: url(../fonts/Spinnaker-Regular.ttf);
 }
 
 /*Navbar styles*/
+
+.easy-word,
+.sky-word {
+  font-size: 35px;
+  color: #f7f265;
+  font-family: "Spinnaker", sans-serif;
+  text-shadow: 1px 1px 1px #0b4d6a;
+}
+
+.sky-word {
+  color: #65d0f7;
+}
+
+.navbar-header p {
+  margin: 5px 0 0 80px;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.navbar-brand a {
+  text-decoration: none; !important
+}
 
 .navbar--style {
   background-color: #edfaff;
@@ -160,6 +192,13 @@ h1 {
 @media all and (max-width: 1000px) { /* screen size until 1000px */
   body {
     font-size: 1.2em; /* 1.2x default size */
+  }
+  .navbar-header p {
+    visibility: hidden;
+  }
+  
+  .navbar-brand {
+    width: 160px;
   }
 }
 
