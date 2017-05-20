@@ -70,7 +70,7 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -220,7 +220,7 @@ h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     max-width: 100%;
     height: auto;
     background-image: 
