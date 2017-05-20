@@ -241,6 +241,10 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  background-attachment: scroll;
+}
+
 @media all and (max-width: 320px) {  
   body {
     font-size: 0.5em; /*1rem = 16px*/
