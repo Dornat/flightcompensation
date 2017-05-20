@@ -241,6 +241,11 @@ h1 {
     padding: 50px 0;
     background-position: top center;
   }
+  
+  .social-buttons > li {
+    margin-right: 10px;
+  }
+  
 }
 
 @media all and (max-width: 320px) {  
