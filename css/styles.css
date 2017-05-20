@@ -9,17 +9,17 @@ body {
 }
 
 @font-face {
-  font-family: Spinnaker;
-  src: url(../fonts/Spinnaker-Regular.ttf);
+  font-family: Pacifico;
+  src: url(../fonts/Pacifico-Regular.ttf);
 }
 
 /*Navbar styles*/
 
 .easy-word,
 .sky-word {
-  font-size: 35px;
+  font-size: 45px;
   color: #f7f265;
-  font-family: "Spinnaker", sans-serif;
+  font-family: "Pacifico", sans-serif;
   text-shadow: 1px 1px 1px #0b4d6a;
 }
 
@@ -27,10 +27,8 @@ body {
   color: #65d0f7;
 }
 
-.navbar-header p {
-  margin: 5px 0 0 80px;
-  font-style: italic;
-  font-size: 13px;
+.navbar-brand {
+  padding: 7px 0 0 0;
 }
 
 .navbar-brand a {
@@ -61,9 +59,41 @@ h1 {
   font-size: 63px;
 }
 
-/* How it works section styles*/
 
-.how-section .container h1 {
+
+/*Sections home*/
+
+.section_home {
+  padding: 200px 0px;
+  background: url(img/consularcare-assistance.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/consularcare-assistance.jpg);
+}
+
+.container--home h1,
+.container--home h2 {
+  text-align: center;
+  font-size: 700%;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #1b404b;
+}
+
+.container--home h2 {
+  font-size: 300%;
+}
+
+/*How it works section*/
+
+.how-section .container h2 {
   font-size: 350%;
   color: black;
   text-align: center;
@@ -88,41 +118,13 @@ h1 {
   font-size: 20px;
 }
 
-/*Sections 1,2,3*/
+/*Section info*/
 
-.section_1 {
-  padding: 200px 0px;
-  background: url(img/consularcare-assistance.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(img/consularcare-assistance.jpg);
-}
-
-
-.container--home h1, h2 {
-  text-align: center;
-  font-size: 700%;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #1b404b;
-}
-
-.container--home h2 {
-  font-size: 300%;
-}
-
-.section_2 {
+.section_info {
   padding: 40px 0;
 }
 
-.container--info h1 {
+.container--info h2 {
   font-size: 350%;
   color: black;
   text-align: center;
@@ -143,25 +145,29 @@ h1 {
   text-align: center;
 }
 
-.section_3 {
+/*Section about us*/
+
+.section_about_us {
+  
+}
+
+/*Section contacts*/
+
+.section_contacts {
   background-color: #f1f6ff;
   font-size: 200%;
   padding: 30px 0;
 }
 
-.section_3 h1 {
+.section_contacts h2 {
   margin-top: 10px;
 }
 
-.contacts__header {
-  font-size: 225%;
-}
 
-/*Footer styles and social buttons stuff*/
+/*Footer styles and social buttons*/
 
 .footer {
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
 }
@@ -198,6 +204,7 @@ h1 {
   body {
     font-size: 1.2em; /* 1.2x default size */
   }
+  
   .navbar-header p {
     visibility: hidden;
   }
@@ -205,15 +212,36 @@ h1 {
   .navbar-brand {
     width: 160px;
   }
+  
+  .section_home {
+    padding: 100px 0;
+    background: url(img/consularcare-assistance-small.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(img/consularcare-assistance-small.jpg);
+  }
 }
 
 @media all and (max-width: 500px) { /* screen size until 500px */
   body {
     font-size: 0.8em; /* 0.8x default size */
   }
+  
+  .section_home {
+    padding: 50px 0;
+    background-position: top center;
+  }
 }
 
-@media all and (max-width: 396px) {  
+@media all and (max-width: 320px) {  
   body {
     font-size: 0.5em; /*1rem = 16px*/
   }
