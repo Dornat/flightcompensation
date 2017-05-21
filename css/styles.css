@@ -232,7 +232,6 @@ h1 {
     background-attachment: scroll;
   }
   
-  
 }
 
 @media all and (max-width: 500px) { /* screen size until 500px */
@@ -250,8 +249,6 @@ h1 {
   
   
 }
-
-
 
 @media all and (max-width: 320px) {  
   body {
