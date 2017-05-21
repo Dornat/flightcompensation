@@ -64,11 +64,11 @@ h1 {
 /*Sections home*/
 
 .section_home {
-  padding: 200px 0px;
-  background: url(img/consularcare-assistance.jpg) no-repeat center center fixed; 
+  padding: 200px 0px; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-image: 
@@ -229,7 +229,10 @@ h1 {
         rgba(0, 0, 0, 0.5)
       ),
       url(img/consularcare-assistance-small.jpg);
+    background-attachment: scroll;
   }
+  
+  
 }
 
 @media all and (max-width: 500px) { /* screen size until 500px */
@@ -239,14 +242,16 @@ h1 {
   
   .section_home {
     padding: 50px 0;
-    background-position: top center;
   }
   
   .social-buttons > li {
     margin-right: 10px;
   }
   
+  
 }
+
+
 
 @media all and (max-width: 320px) {  
   body {
