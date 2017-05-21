@@ -215,12 +215,12 @@ h1 {
   
   .section_home {
     padding: 100px 0;
-    background: url(img/consularcare-assistance-small.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     max-width: 100%;
     height: auto;
     background-image: 
