@@ -1,5 +1,5 @@
 body {
-  margin-top: 50px;
+  margin-top: 70px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -103,7 +103,7 @@ h1 {
 
 .how-section {
   background-color: #f1f6ff;
-  padding: 50px 0;
+  padding: 30px 0 50px 0;
   text-align: center;
 }
 
@@ -121,7 +121,7 @@ h1 {
 /*Section info*/
 
 .section_info {
-  padding: 40px 0;
+  padding: 30px 0 0 0;
 }
 
 .container--info h2 {
@@ -160,7 +160,8 @@ h1 {
 }
 
 .section_contacts h2 {
-  margin-top: 10px;
+  font-size: 150%;
+  margin: 0 0 20px 0;
 }
 
 
