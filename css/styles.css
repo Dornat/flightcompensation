@@ -52,18 +52,16 @@ body {
 
 .navbar-brand,
 .navbar-right--options {
-  font-size: 200%;
+  font-size: 2em;
 }
 
-h1 {
-  font-size: 63px;
+/*Carousel*/
+
+#easyskyCarousel .item {
+  height: 700px;
 }
 
-
-
-/*Sections home*/
-
-.section_home {
+#slide1 {
   padding: 200px 0px; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -79,22 +77,49 @@ h1 {
     url(img/consularcare-assistance.jpg);
 }
 
+#slide2 {
+  padding: 200px 0px; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/consularcare-assistance.jpg);
+}
+
+/*Carousel-content*/
+
+.container--home {
+  position: absolute;
+  top: 200px;
+  width: 96.66666666666666%;
+}
+
 .container--home h1,
 .container--home h2 {
   text-align: center;
-  font-size: 700%;
   color: #ffffff;
   text-shadow: 1px 1px 1px #1b404b;
 }
 
+.container--home h1 {
+  font-size: 7em;
+}
+
 .container--home h2 {
-  font-size: 300%;
+  font-size: 3em;
 }
 
 /*How it works section*/
 
 .how-section .container h2 {
-  font-size: 350%;
+  font-size: 3.5em;
   color: black;
   text-align: center;
   padding: 35px 0;
@@ -125,7 +150,7 @@ h1 {
 }
 
 .container--info h2 {
-  font-size: 350%;
+  font-size: 3.5em;
   color: black;
   text-align: center;
   padding: 35px 0;
@@ -133,12 +158,12 @@ h1 {
 }
 
 .container--info p {
-  font-size: 185%;
+  font-size: 1.85em;
   text-align: justify;
 }
 
 .table--info {
-  font-size: 150%;
+  font-size: 1.5em;
 }
 
 .table--info td:nth-child(3) {
@@ -155,12 +180,12 @@ h1 {
 
 .section_contacts {
   background-color: #f1f6ff;
-  font-size: 200%;
+  font-size: 2em;
   padding: 30px 0;
 }
 
 .section_contacts h2 {
-  font-size: 150%;
+  font-size: 1.5em;
   margin: 0 0 20px 0;
 }
 
@@ -214,7 +239,34 @@ h1 {
     width: 160px;
   }
   
-  .section_home {
+  #easyskyCarousel .item {
+    height: 600px;
+  }
+  
+  .container--home {
+    top: 170px;
+  }
+  
+  #slide1 {
+    padding: 100px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(img/consularcare-assistance-small.jpg);
+    background-attachment: scroll;
+  }
+  
+  #slide2 {
     padding: 100px 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -238,14 +290,25 @@ h1 {
   }
 }
 
+@media all and (max-width: 580px) {
+  .container--home {
+    top: 85px;
+  }
+}
+
 @media all and (max-width: 500px) { /* screen size until 500px */
   body {
     font-size: 0.8em; /* 0.8x default size */
   }
   
-  .section_home {
-    padding: 50px 0;
+  #easyskyCarousel .item {
+    height: 450px;
   }
+  
+  .container--home {
+    top: 100px;
+  }
+  
   
   .social-buttons > li {
     margin-right: 10px;
@@ -256,6 +319,17 @@ h1 {
 
 @media all and (max-width: 320px) {  
   body {
-    font-size: 0.5em; /*1rem = 16px*/
+    font-size: 0.55em; /*1rem = 16px*/
   }
+  
+  
+  
+  #easyskyCarousel .item {
+    height: 300px;
+  }
+  
+  .container--home {
+    top: 100px;
+  }
+  
 }
