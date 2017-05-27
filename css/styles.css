@@ -57,6 +57,10 @@ body {
 
 /*Carousel*/
 
+.section_home {
+  position: relative;
+}
+
 #easyskyCarousel .item {
   height: 700px;
 }
@@ -97,8 +101,9 @@ body {
 
 .container--home {
   position: absolute;
-  top: 200px;
-  width: 96.66666666666666%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container--home h1,
