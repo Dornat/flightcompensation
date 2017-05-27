@@ -248,10 +248,6 @@ body {
     height: 600px;
   }
   
-  .container--home {
-    top: 170px;
-  }
-  
   #slide1 {
     padding: 100px 0;
     -webkit-background-size: cover;
@@ -295,12 +291,6 @@ body {
   }
 }
 
-@media all and (max-width: 580px) {
-  .container--home {
-    top: 85px;
-  }
-}
-
 @media all and (max-width: 500px) { /* screen size until 500px */
   body {
     font-size: 0.8em; /* 0.8x default size */
@@ -310,15 +300,9 @@ body {
     height: 450px;
   }
   
-  .container--home {
-    top: 100px;
-  }
-  
-  
   .social-buttons > li {
     margin-right: 10px;
   }
-  
   
 }
 
@@ -327,14 +311,13 @@ body {
     font-size: 0.55em; /*1rem = 16px*/
   }
   
-  
-  
   #easyskyCarousel .item {
     height: 300px;
   }
   
-  .container--home {
-    top: 100px;
+  .container--home h1,
+  .container--home h2 {
+    margin-top: 10px;
   }
   
 }
