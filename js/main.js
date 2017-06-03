@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // Add scrollspy to <body>
-    $('body').scrollspy({target: ".navbar-fixed-top", offset: 50});
+    $('body').scrollspy({target: ".navbar-fixed-top", offset: 70});
 
     // Add smooth scrolling on all links inside the navbar
     $("#bs-example-navbar-collapse-1 a").on('click', function(event) {

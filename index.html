@@ -29,7 +29,7 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-options navbar--style">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header" style="padding-left: 20px">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -37,7 +37,6 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand">
-            <a href="#home"><span class="easy-word">Easy</span><span class="sky-word">Sky</span></a>
           </div>   
         </div><!--Navbar header-->
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,59 +53,70 @@
     <!--  Section with background-image and larg text -->
     <div class="section_home" id="home">
       <div class="carousel slide" id="easyskyCarousel" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#easyskyCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#easyskyCarousel" data-slide-to="1"></li>
-        </ol>
         <div class="carousel-inner">
           <div class="item active" id="slide1">
-          </div>
-          <div class="item" id="slide2">
           </div>
         </div>
       </div><!--Carousel-->
       <div class="container container--home">
         <h1>Затримали чи відмінили авіарейс?</h1>
-        <h2>EasySky допоможе Вам отримати компенсацію до 600&nbsp;&euro;</h2>
+        <h2>ОТРИМАЙТЕ КОМПЕНСАЦІЮ ДО 600&nbsp;&euro;!</h2>
       </div> 
     </div><!--Large text-->
     <!--  How it works section  -->
     <div class="how-section">
-      <div class="container">
-        <h2>Як це працює?</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="how-section__image">
-              <img src="images/loupe.svg" alt="Перевірка можливості компенсування">
-            </div>
-            <div class="how-section__info">
-              <p>EasySky знаходить найефективніший спосіб захисту ваших прав у протистоянні зі світовими авіакомпаніями</p>
-            </div>  
-          </div><!--col-sm-4-->
-          <div class="col-sm-4">
-            <div class="how-section__image">
-              <img src="images/signing-the-contract.svg" width="100" height="100" alt="Запит до авіакомпанії від EasySky">
-            </div>
-            <div class="how-section__info">
-              <p>EasySky формує офіційну претензію на ім’я авіакомпанії</p>
-            </div>
-          </div><!--col-sm-4-->
-          <div class="col-sm-4">
-            <div class="how-section__image">
-              <img src="images/coin.svg" alt="Отримані гроші за компенсацію">
-            </div>
-            <div class="how-section__info">
-              <p>Швидко та без жодних зусиль Ви отримуєте компенсацію до 600&nbsp;&euro;</p>
-            </div>
-          </div><!--col-sm-4-->
-        </div><!--How-section row-->
-      </div><!--How-section container-->
+      <div class="container-fluid">
+        <div class="wrapper-head">
+          <div class="container wrapper-h2">
+            <h2>ЯК ЦЕ ПРАЦЮЄ?</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row row-comp-info">
+            <div class="col-sm-4">
+              <div class="how-section__image">
+                <div class="circle">
+                  <img class="how-image" src="images/loupe.svg" width="100" height="100" alt="Перевірка можливості компенсування">
+                </div>
+              </div>
+              <div class="how-section__info">
+                <p>EasySky знаходить ефективний спосіб захисту Ваших прав</p>
+              </div>  
+            </div><!--col-sm-4-->
+            <div class="col-sm-4">
+              <div class="how-section__image">
+                <div class="circle">
+                  <img class="how-image how-image--2" src="images/signing-the-contract.svg" width="100" height="100" alt="Запит до авіакомпанії від EasySky">
+                </div>
+              </div>
+              <div class="how-section__info">
+                <p>EasySky формує офіційну претензію до авіакомпанії</p>
+              </div>
+            </div><!--col-sm-4-->
+            <div class="col-sm-4">
+              <div class="how-section__image">
+                <div class="circle">
+                  <img class="how-image" src="images/coin.svg" width="100" height="100" alt="Отримані гроші за компенсацію">
+                </div>
+              </div>
+              <div class="how-section__info">
+                <p>Ви без зусиль та швидко отримуєте компенсацію до 600&nbsp;&euro;</p>
+              </div>
+            </div><!--col-sm-4-->
+          </div><!--How-section row-->
+        </div><!--container-->  
+      </div><!--How-section container-fluid-->
     </div><!--How-section-->
-    <!--  Section with a lot of info and text  -->  
-    <div class="section_info">
-      <div class="container container--info" id="information">
-        <h2>Розмір компенсаційних виплат</h2>            
-        <table class="table table-hover table--info">
+    <!--  Section with a lot of info and text  -->
+    <div class="container--info" id="information">
+      <div class="container-fluid">
+        <div class="wrapper-head">
+          <div class="container wrapper-h2">
+            <h2>РОЗМІР КОМПЕНСАЦІЙНИХ ВИПЛАТ</h2>
+          </div>
+        </div>
+        <div class="container table-cont">
+          <table class="table table-hover table--info">
           <thead>
             <tr>
               <th>Дистанція Рейсу</th>
@@ -141,28 +151,116 @@
               <td>600 &euro;</td>
             </tr>
           </tbody>
-        </table>
-      </div><!--Table container-->
-      <div class="container container--info">
-        <h2>Що таке компенсація за затримані чи відмінені рейси?</h2>
-        <p>Якщо ж вже так сталося й Ваш авіарейс було затримано, відмінено, або Вам було відмовлено у посадці через овербукінг і це не було спричинено дією непереборної сили – Вам зовсім не потрібно засмучуватися!</p>
-        <p>Ще в 2005 році була введена в дію <a href="http://bit.ly/28OTQ1t" title="Постанова №261/2004" target="_blank" rel="nofollow">Постанова Європейського парламенту та Ради ЄС №261/2004</a>, яка <strong>зобов’язує авіаперевізників відшкодовувати пасажирам збитки</strong>, завдані затримкою, відміною авіарейсу. Це стосується усіх авіакомпаній, що вилітають з аеропортів Європи, включаючи Ісландію, Норвегію, Швейцарію, Канарські острови, а також усіх європейських авіакомпаній, що вилітають з будь-яких інших країн, якщо кінцевий пункт прибуття рейсу – аеропорт на території країн-членів ЄС.</p>
-        <p>Це означає, якщо Ваш рейс було затримано більше ніж на 3 години, <strong>Ви маєте право на отримання компенсації до 600&nbsp;&euro;!</strong></p>
-        <p>За отриманням компенсації Ви можете звернутися протягом 6 років з моменту порушення Ваших прав авіаперевізником.</p>
-        <p>EasySky вже допомогло більш як півтисячі своїм клієнтам швидко та без жодних зусиль, витрачання часу та грошей, отримати грошову компенсацію від авіакомпаній. <strong>Середній розмір  компенсації складає 400&nbsp;&euro; на одного пасажира!</strong></p>
-        <p>Наша мета – це цілковита Ваша захищеність та 100% упевненість, як споживача послуг авіаперевезень. Захист Ваших прав та інтересів є абсолютною прерогативою EasySky.</p>
-        <hr>
-      </div><!--Info container-->
-    </div><!--Section_info-->
+        </table><!--Table container-->
+        </div><!--table container-->
+      </div><!--info container-fluid-->
+    </div>
+    <div class="comp-info">
+      <div class="container-fluid">
+        <div class="wrapper-head">
+          <div class="container wrapper-h2">
+            <h2>ЩО ТАКЕ КОМПЕНСАЦІЯ ЗА ЗАТРИМАНІ ЧИ ВІДМІНЕНІ РЕЙСИ?</h2>
+          </div>
+        </div>
+        <div class="wrapper-info">
+          <div class="container">
+            Ваш авіарейс було затримано, відмінено, або Вам відмовлено у посадці?
+            <br>
+            ЕasySky розуміє як, та успішно допомагає отримати компенсацію. Ви маєте знати:
+          </div>
+        </div>
+        <div class="container">
+          <div class="row row-comp-info">
+            <div class="col-sm-4">
+              <div class="compensation__info">
+                <ul class="fa-ul check-circle">
+                  <li>
+                    <i class="fa-li fa fa-check-circle-o fa-2x" aria-hidden="true"></i><a href="http://bit.ly/28OTQ1t" title="Постанова №261/2004" target="_blank" rel="nofollow">Постанова Європейського парламенту та Ради ЄС №261/2004</a>, яка <strong>зобов’язує авіаперевізників відшкодовувати пасажирам збитки</strong>, завдані затримкою чи відміною авіарейсу.
+                  </li>
+                </ul>
+              </div>  
+            </div><!--col-sm-4-->
+            <div class="col-sm-4">
+              <div class="compensation__info">
+                <ul class="fa-ul check-circle">
+                  <li>
+                    <i class="fa-li fa fa-check-circle-o fa-2x" aria-hidden="true"></i>Це стосується усіх авіакомпаній, що вилітають з ЄС, включаючи Ісландію, Норвегію, Швейцарію, Канарські острови, усіх авіакомпаній, що вилітають з будь-яких інших країн до ЄС.
+                  </li>
+                </ul>
+              </div>
+            </div><!--col-sm-4-->
+            <div class="col-sm-4">
+              <div class="compensation__info">
+                <ul class="fa-ul check-circle">
+                  <li>
+                    <i class="fa-li fa fa-check-circle-o fa-2x" aria-hidden="true"></i>Це означає, рейс затримано на 3 години - <strong>Ви отримуєте компенсацію до 600&nbsp;&euro;!</strong> Вам не потрібно витрачати свій час, свої гроші та нерви.
+                  </li>
+                  <li>
+                    EasySky вже допомогло більш як півтисячі клієнтам, а <strong>середній розмір  компенсації складає 400&nbsp;&euro; на одного пасажира!</strong>
+                  </li>
+                </ul>
+              </div>
+            </div><!--col-sm-4-->
+          </div><!--How-section row-->
+        </div><!--container-->
+        <div class="wrapper-info__footer">
+          <div class="container">
+            <ul class="fa-ul check-circle">
+              <li>
+                <i class="fa-li fa fa-check-circle-o fa-2x" aria-hidden="true"></i>Наша мета – це цілковита Ваша захищеність та 100% упевненість, як споживача послуг авіаперевезень. Захист Ваших прав та інтересів є абсолютною прерогативою EasySky.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!--about us-->
     <div class="section_about_us" id="about_us">
-      <div class="container container--info">
-       <h2>Про Нас</h2>
-        <p>Ми працюємо за принципом жодних авансових внесків. Тобто, якщо ми не були успішні в отриманні вами компенсації, то ви нічого не витрачаєте, бо нічого нам не платите.
-        <p>Наша команда не боїться викликів та з радістю допоможе вам у захисті ваших законних прав!</p>
-        <p>Ми змусимо авіакомпанії заплатити за завдані незручності, а у разі безпідставної відмови притягнемо їх до відповідальності у судовому порядку.</p>
-      </div><!--About_us-info container-->
+      <div class="wrapper-head">
+        <div class="container wrapper-h2">
+          <h2>ПРО НАС</h2>
+        </div>
+      </div>
+      <div class="about-us__info">
+        
+        <div class="container">
+          <div class="hand-logo">
+            
+          </div>
+          <div class="row row-comp-info">
+            <div class="col-sm-4">
+              <div class="compensation__info">
+                <ul class="fa-ul check-circle">
+                  <img class="bullet-hand" src="images/hand.svg" height="50">
+                  <li>
+                    «No Win – No Fee», тобто жодних авансів! Все просто: <strong>Ви не отримали компенсацію – ми надали свої послуги безкоштовно!</strong>
+                  </li>
+                </ul>
+              </div>  
+            </div><!--col-sm-4-->
+            <div class="col-sm-4">
+              <div class="compensation__info">
+                <ul class="fa-ul check-circle">
+                  <img class="bullet-hand" src="images/hand.svg" height="50">
+                  <li>
+                    Команда ЕasySky не боїться викликів, <strong>97% компенсацій успішно виплачені!</strong>
+                  </li>
+                </ul>
+              </div>
+            </div><!--col-sm-4-->
+            <div class="col-sm-4">
+              <div class="compensation__info">
+                <ul class="fa-ul check-circle">
+                  <img class="bullet-hand" src="images/hand.svg" height="50">
+                   <li>
+                    <strong>Авіакомпанія несе юридичну відповідальність</strong> – ЕasySky представляє Ваш інтерес в залі суду!
+                  </li>
+                </ul>
+              </div>
+            </div><!--col-sm-4-->
+          </div><!--How-section row-->
+        </div><!--container-->
+      </div><!--about-us__info-->
     </div><!--Section_about_us-->
-    
     <!--  Section with contacts  -->
     <div class="section_contacts" id="contacts">
       <div class="container">

@@ -1,16 +1,21 @@
 body {
   margin-top: 70px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Myriad", sans-serif;
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.ttf);
+  font-family: Myriad;
+  src: url(../fonts/MyriadPro-Regular.otf);
 }
 
 @font-face {
   font-family: Pacifico;
   src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: CenturyGothic;
+  src: url(../fonts/CenturyGothic-Regular.ttf);
 }
 
 /*Navbar styles*/
@@ -28,7 +33,11 @@ body {
 }
 
 .navbar-brand {
-  padding: 7px 0 0 0;
+  display: block;
+  background: url(../images/logo.svg) center center no-repeat;
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
 }
 
 .navbar-brand a {
@@ -36,14 +45,15 @@ body {
 }
 
 .navbar--style {
-  background-color: #edfaff;
+  background-color: #bdc4c8;
+  border-color:   #bdc4c8;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
   text-shadow: 0.25px 0.25px 0.25px #48686f;  
-  background-color: #edfaff; !important
+  background-color: #bdc4c8; !important
 }
 
 .navbar-options {
@@ -52,7 +62,11 @@ body {
 
 .navbar-brand,
 .navbar-right--options {
-  font-size: 2em;
+  font-size: 1.5em;
+  }
+
+.navbar-collapse .navbar-right--options > li > a {
+  color: #ffffff;
 }
 
 /*Carousel*/
@@ -78,23 +92,7 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(img/consularcare-assistance.jpg);
-}
-
-#slide2 {
-  padding: 200px 0px; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(img/consularcare-assistance.jpg);
+    url(../images/consularcare-assistance.gif);
 }
 
 /*Carousel-content*/
@@ -111,6 +109,7 @@ body {
   text-align: center;
   color: #ffffff;
   text-shadow: 1px 1px 1px #1b404b;
+  font-family: "CenturyGothic"  , sans-serif;
 }
 
 .container--home h1 {
@@ -118,28 +117,57 @@ body {
 }
 
 .container--home h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 /*How it works section*/
 
-.how-section .container h2 {
-  font-size: 3.5em;
-  color: black;
+.how-section {
+  background-color: #dbdfe1;
+  
   text-align: center;
-  padding: 35px 0;
-  margin: 0 0 20px 0;
 }
 
-.how-section {
-  background-color: #f1f6ff;
-  padding: 30px 0 50px 0;
+.container-fluid {
+  padding: 0;
+}
+
+.wrapper-head {
+  background: #0a887b;
+  height: auto;
+  border-bottom: 25px solid #859098;
+  padding: 30px 0;
+  
+}
+
+.wrapper-h2 h2 {
+  margin: 0;
+  font-size: 3.8em;
+  color: white;
   text-align: center;
+}
+
+.row-comp-info {
+  padding: 30px 0;
 }
 
 .how-section__image {
-  margin-bottom: 30px;
-  width: 100px;
+  margin-bottom: 10px;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+}
+
+.how-image--2 {
+  margin-left: 26px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  line-height: 150px;
   display: inline-block;
   text-align: center;
 }
@@ -154,17 +182,12 @@ body {
   padding: 30px 0 0 0;
 }
 
-.container--info h2 {
-  font-size: 3.5em;
-  color: black;
-  text-align: center;
-  padding: 35px 0;
-  margin: 0;
+.table-cont {
+  padding: 30px 0;
 }
 
-.container--info p {
-  font-size: 1.85em;
-  text-align: justify;
+.table {
+  margin-bottom: 0;
 }
 
 .table--info {
@@ -175,16 +198,73 @@ body {
   text-align: center;
 }
 
+.comp-info {
+  background: #dbdfe1;
+}
+
+.wrapper-info {
+  height: auto;
+  padding: 30px 0;
+  background: #bdc4c8;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.check-circle {
+  font-size: 1.5em;
+}
+
+.bullet-hand {
+  position: absolute;
+  margin-left: -50px;
+}
+
+a {
+  color: #11524b;
+}
+
+a:hover {
+  color: #0a887b;
+  text-decoration: none;
+}
+
+.wrapper-info__footer {
+  background: black;
+  color: white;
+  padding: 20px 0 10px;
+}
+
 /*Section about us*/
 
 .section_about_us {
   
 }
 
+.about-us__info {
+  padding: 50px 0px; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url(../images/about-us-image.gif);
+}
+
+.hand-logo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url(../images/logo-with-hand.svg);
+  height: 600px;
+  margin: auto;
+  width: 50%;
+}
+
 /*Section contacts*/
 
 .section_contacts {
-  background-color: #f1f6ff;
+  background-color: #dbdfe1;
   font-size: 2em;
   padding: 30px 0;
 }
@@ -204,7 +284,7 @@ body {
 }
 
 .footer--style {
-  background-color: #ddf5ff;
+  background-color: #bdc4c8;
   height: auto;
 }
 
@@ -263,31 +343,42 @@ body {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(img/consularcare-assistance-small.jpg);
-    background-attachment: scroll;
-  }
-  
-  #slide2 {
-    padding: 100px 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
-    background-image: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(img/consularcare-assistance-small.jpg);
+      url(../images/consularcare-assistance-small.gif);
     background-attachment: scroll;
   }
   
   .col__border {
     border-right: none;
+  }
+  
+  .about-us__info {
+  padding: 50px 0px; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url(../images/about-us-image2.gif);
+  }
+
+}
+
+@media all and (max-width: 767px) {
+  .about-us__info {
+  padding: 50px 0px; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url(../images/about-us-image3.gif);
+  }
+  
+  .bullet-hand {
+    height: 30px;
+    margin-left: -30px;
   }
 }
 
@@ -298,6 +389,30 @@ body {
   
   #easyskyCarousel .item {
     height: 450px;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+  
+  .how-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .circle .how-image--2 {
+    margin-left: 14px;
+  }
+  
+  .hand-logo {
+    height: 300px;
+  }
+  
+  .bullet-hand {
+    height: 20px;
+    margin-left: -20px;
   }
   
   .social-buttons > li {
@@ -318,6 +433,14 @@ body {
   .container--home h1,
   .container--home h2 {
     margin-top: 10px;
+  }
+  
+  .about-us__info {
+    padding: 20px 0;
+  }
+  
+  .hand-logo {
+    height: 150px;
   }
   
 }
