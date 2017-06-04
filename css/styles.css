@@ -92,7 +92,7 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../images/consularcare-assistance.gif);
+    url(../images/consularcare-assistance-1920.jpg);
 }
 
 /*Carousel-content*/
@@ -248,7 +248,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-image: url(../images/about-us-image.gif);
+  background-image: url(../images/about-us-img-1920.jpg);
 }
 
 .hand-logo {
@@ -343,7 +343,7 @@ a:hover {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(../images/consularcare-assistance-small.gif);
+      url(../images/consularcare-assistance-small-1000.jpg);
     background-attachment: scroll;
   }
   
@@ -359,7 +359,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-image: url(../images/about-us-image2.gif);
+  background-image: url(../images/about-us-img-1000.jpg);
   }
 
 }
@@ -373,7 +373,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-image: url(../images/about-us-image3.gif);
+  background-image: url(../images/about-us-img-1000.jpg);
   }
   
   .bullet-hand {
