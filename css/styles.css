@@ -45,15 +45,15 @@ body {
 }
 
 .navbar--style {
-  background-color: #bdc4c8;
+  background-color: #ffffff;
   border-color:   #bdc4c8;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-  text-shadow: 0.25px 0.25px 0.25px #48686f;  
-  background-color: #bdc4c8; !important
+   
+  background-color: #ffffff; !important
 }
 
 .navbar-options {
@@ -66,7 +66,7 @@ body {
   }
 
 .navbar-collapse .navbar-right--options > li > a {
-  color: #ffffff;
+  color: #859098;
 }
 
 /*Carousel*/
@@ -194,18 +194,14 @@ body {
   font-size: 1.5em;
 }
 
-.table--info td:nth-child(3) {
-  text-align: center;
-}
-
 .comp-info {
-  background: #dbdfe1;
+  background: #ffffff;
 }
 
 .wrapper-info {
   height: auto;
   padding: 30px 0;
-  background: #bdc4c8;
+  background: #dbdfe1;
   text-align: center;
   font-size: 1.8em;
 }
@@ -304,6 +300,12 @@ a:hover {
 }
 
 /*Responsive text on all page (depending on different screen width) */
+
+@media all and (min-width: 1200px) {
+  #fa992 {
+    top: -5px;
+  }
+}
 
 @media all and (max-width: 1200px) { /* screen size until 1200px */
   body {
